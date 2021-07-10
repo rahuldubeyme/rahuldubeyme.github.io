@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="stt.css">
+</script>
+    <script type="text/javascript" src="html5-qrcode.js">
+    </script>
+    <script type="text/javascript" src="qrcode.js"></script>
+    <style type="text/css" media="screen">
+     
+
+    </style>
+  </head>
+  <body>
+
+<div class="container p-3 mt-5" id="maindiv">
+    <h1 class="p-3" id="header">WhatsApp QR-Code Generator</h1>
+  <div class="row">
+           <div class="col-sm-9 col-md-6 col-lg-8 pb-5" id="qrcode" ></div>
+          
+
+         <div class="col-sm-3 col-md-6 col-lg-4 mt-5 pt-5 ">
+          <label>Input Your Number</label>
+         <input type="text" class="form-control form-control-sm" placeholder="Input no "  name="textField" value="https://wa.me/91" rows="4" cols="70" onkeyup='updateQRCode(this.value)' onclick="this.focus();this.select();">
+          <p>
+            Example : https://wa.me/91(place your number).<br>
+            https://wa.me/919824554660
+          </p>
+       </div>
+          
+ 
+  </div>
+</div>
+
+   
+    
+    <!-- This is where our QRCode will appear in. -->
+   
+    
+    <script type="text/javascript">
+      function updateQRCode(text) {
+
+        var element = document.getElementById("qrcode");
+
+        var bodyElement = document.body;
+        if(element.lastChild)
+          element.replaceChild(showQRCode(text), element.lastChild);
+        else
+          element.appendChild(showQRCode(text));
+
+      }
+
+      updateQRCode('Demo');
+    </script>
+  </body>
+</html>
