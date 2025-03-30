@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MLM Business</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
     <style>
         body { font-family: Arial, sans-serif; }
         .hero { 
@@ -22,220 +23,14 @@
             height: 100%;
             background: rgba(0, 0, 0, 0.5);
         }
-        .hero-content {
-            position: relative;
-            z-index: 1;
-        }
+        .hero-content { position: relative; z-index: 1; }
         .section { padding: 50px 0; }
         .team img { width: 100px; border-radius: 50%; }
-        .about-us {
-            background: #f8f9fa;
-            padding: 60px 0;
-            text-align: center;
-        }
-        .about-us h2 {
-            font-size: 2.5rem;
-            font-weight: bold;
-            margin-bottom: 20px;
-        }
-        .about-us p {
-            font-size: 1.2rem;
-            color: #555;
-            max-width: 800px;
-            margin: 0 auto 20px;
-        }
-        .about-us .btn {
-            margin-top: 20px;
-        }
-        .video-section {
-            background: url('video-banner.jpg') no-repeat center center/cover;
-            padding: 80px 0;
-            text-align: center;
-            position: relative;
-            color: white;
-        }
-        .video-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.5);
-        }
-        .video-content {
-            position: relative;
-            z-index: 1;
-        }
-        .video-container {
-            position: relative;
-            padding-bottom: 56.25%; 
-            height: 0;
-            overflow: hidden;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        .video-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border-radius: 10px;
-        }
-        .compensation-section {
-            background: #f8f9fa;
-            padding: 80px 0;
-            text-align: center;
-        }
-        .compensation-section h2 {
-            font-size: 2.5rem;
-            font-weight: bold;
-            margin-bottom: 20px;
-        }
-        .compensation-section p {
-            font-size: 1.2rem;
-            color: #555;
-            max-width: 800px;
-            margin: 0 auto 40px;
-        }
-        .compensation-card {
-            background: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
-        }
-        .compensation-card:hover {
-            transform: translateY(-5px);
-        }
-        .compensation-card h4 {
-            font-size: 1.5rem;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-        .compensation-card p {
-            font-size: 1rem;
-            color: #777;
-        }
-        .team-section {
-            background: #f8f9fa;
-            padding: 80px 0;
-            text-align: center;
-        }
-        .team-section h2 {
-            font-size: 2.5rem;
-            font-weight: bold;
-            margin-bottom: 20px;
-        }
-        .team-section p {
-            font-size: 1.2rem;
-            color: #555;
-            max-width: 800px;
-            margin: 0 auto 40px;
-        }
-        .team-member {
-            background: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
-        }
-        .team-member:hover {
-            transform: translateY(-5px);
-        }
-        .team-member img {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            margin-bottom: 15px;
-            border: 4px solid #ddd;
-        }
-        .team-member h4 {
-            font-size: 1.5rem;
-            font-weight: bold;
-            margin-bottom: 5px;
-        }
-        .team-member p {
-            font-size: 1rem;
-            color: #777;
-        }
-        .signup-section {
-            background: #f8f9fa;
-            padding: 80px 0;
-        }
-        .signup-section h2 {
-            font-size: 2.5rem;
-            font-weight: bold;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-        .signup-content {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .signup-description {
-            padding: 20px;
-        }
-        .signup-description p {
-            font-size: 1.2rem;
-            color: #555;
-        }
-        .signup-form {
-            max-width: 400px;
-            background: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-        }
-        .signup-form .form-label {
-            font-weight: bold;
-        }
-        .signup-form .btn {
-            font-size: 1.2rem;
-            padding: 10px;
-        }
-        .reach-section {
-            background: #007bff;
-            color: white;
-            padding: 60px 0;
-            text-align: center;
-        }
-        .reach-section h2 {
-            font-size: 2rem;
-            margin-bottom: 10px;
-        }
-        .footer {
-            background: #222;
-            color: white;
-            padding: 40px 0;
-        }
-        .footer h4 {
-            font-size: 1.5rem;
-            margin-bottom: 15px;
-        }
-        .footer p, .footer a {
-            color: #bbb;
-            font-size: 1rem;
-            text-decoration: none;
-        }
-        .footer a:hover {
-            color: white;
-        }
-        .footer .social-icons a {
-            display: inline-block;
-            margin-right: 10px;
-            font-size: 1.5rem;
-            color: #bbb;
-        }
-        .footer .social-icons a:hover {
-            color: white;
-        }
+        .signup-section { background: #f8f9fa; padding: 60px 0; }
+        .footer { background: #222; color: white; padding: 40px 0; }
     </style>
 </head>
 <body>
-    
-    <!-- Banner Slider -->
     <div id="bannerCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -256,7 +51,6 @@
         </button>
     </div>
     
-    <!-- Hero Section -->
     <div class="hero">
         <div class="hero-overlay"></div>
         <div class="hero-content container">
@@ -266,96 +60,20 @@
         </div>
     </div>
     
-      <!-- About Us Section -->
-      <div class="about-us">
-        <div class="container">
-            <h2>About Us</h2>
-            <p>We are a leading MLM company dedicated to empowering individuals with innovative business opportunities, financial growth, and entrepreneurial success. With a strong network and a vision for the future, we help our members achieve independence and prosperity.</p>
-            <a href="#" class="btn btn-primary">Learn More</a>
-        </div>
+    <div class="container section">
+        <h2 class="text-center">About Us</h2>
+        <p class="text-center">We are a leading MLM company dedicated to empowering individuals with innovative business opportunities.</p>
     </div>
     
-    <!-- Video Section with Banner Image -->
-    <div class="video-section">
-        <div class="video-overlay"></div>
-        <div class="video-content container">
-            <h2>Watch Our Success Story</h2>
-            <div class="video-container">
-                <iframe src="https://www.youtube.com/embed/eDD3ok5ac2Q?si=U9V9fswH8STxuloq" frameborder="0" allowfullscreen></iframe>
-            </div>
-        </div>
-    </div>
-    
-    <!-- Compensation Plan Section -->
-    <div class="compensation-section">
-        <div class="container">
-            <h2>Our Compensation Plan</h2>
-            <p>Unlock new earning opportunities through direct referrals and network growth. The more you grow, the more you earn!</p>
-            <div class="row text-center">
-                <div class="col-md-4">
-                    <div class="compensation-card">
-                        <h4>Level 1</h4>
-                        <p>Earn <strong>10%</strong> on direct referrals</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="compensation-card">
-                        <h4>Level 2</h4>
-                        <p>Earn <strong>5%</strong> on second-level members</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="compensation-card">
-                        <h4>Level 3</h4>
-                        <p>Earn <strong>2%</strong> on third-level members</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <!-- Team Section -->
-    <div class="team-section">
-        <div class="container">
-            <h2>Meet Our Leaders</h2>
-            <p>Our team consists of experienced professionals who guide and mentor our network to success.</p>
-            <div class="row text-center">
-                <div class="col-md-4">
-                    <div class="team-member">
-                        <img src="./img/user/1.png" alt="Leader 1">
-                        <h4>John Doe</h4>
-                        <p>Top MLM Achiever</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="team-member">
-                        <img src="./img/user/2.png" alt="Leader 2">
-                        <h4>Jane Smith</h4>
-                        <p>Marketing Expert</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="team-member">
-                        <img src="./img/user/3.png" alt="Leader 3">
-                        <h4>Michael Lee</h4>
-                        <p>Business Strategist</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <!-- Signup/Login Form -->
     <div class="signup-section" id="signup">
         <div class="container">
-            <h2>Join Our Team</h2>
-            <div class="row signup-content">
-                <div class="col-md-6 signup-description">
-                    <p>Become a part of our growing MLM business and achieve financial independence. Join our network of successful individuals and start earning today!</p>
-                    <p>With our structured plan, mentorship, and innovative approach, you will have the tools you need to succeed. Sign up now and take your first step towards success.</p>
+            <h2 class="text-center">Join Our Team</h2>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p>Become a part of our growing MLM business and achieve financial independence.</p>
                 </div>
                 <div class="col-md-6">
-                    <form class="signup-form">
+                    <form class="p-4 bg-white shadow rounded">
                         <div class="mb-3">
                             <label class="form-label">Full Name</label>
                             <input type="text" class="form-control" placeholder="Enter your full name" required>
@@ -375,13 +93,12 @@
         </div>
     </div>
 
-    <!-- Footer Section -->
     <footer class="footer">
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
                     <h4>About Us</h4>
-                    <p>We are a leading MLM company dedicated to helping individuals achieve financial freedom through network marketing.</p>
+                    <p>We help individuals achieve financial freedom through network marketing.</p>
                 </div>
                 <div class="col-md-4">
                     <h4>Contact Us</h4>
@@ -390,11 +107,11 @@
                 </div>
                 <div class="col-md-4">
                     <h4>Follow Us</h4>
-                    <div class="social-icons">
-                        <a href="#"><i class="bi bi-facebook"></i></a>
-                        <a href="#"><i class="bi bi-twitter"></i></a>
-                        <a href="#"><i class="bi bi-instagram"></i></a>
-                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                    <div>
+                        <a href="#" class="me-2"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="me-2"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="me-2"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="me-2"><i class="bi bi-linkedin"></i></a>
                     </div>
                 </div>
             </div>
